@@ -11,9 +11,11 @@
             align-items: center; 
             height: 100vh; margin: 0; 
             font-family: Arial, sans-serif; 
-            background-position: left top;
             background-image: url(/backgrounds/h3.png);
+            background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
         } 
         .login-container { 
             background: #fff; 
@@ -85,11 +87,11 @@
                 const validPassword = 'yourPassword'; 
                 if (username === validUsername && password === validPassword) { 
                     alert('Login successful'); 
-                    window.location.href = 'Staff_page.html'; // Replace with your main page URL 
+                    window.location.href = '/main/Staff_page.html'; // Replace with your main page URL 
                 } 
                 else { 
                     alert('Invalid username or password'); 
-                    window.location.href = 'mainpage.html';
+                    window.location.href = '/main/mainpage.html';
 
                 }
                 return false; // Prevent form submission 
